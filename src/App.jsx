@@ -1,15 +1,18 @@
-import { useState } from 'react'
-import './App.css'
-import Calc from './components/Calc'
+import React from "react";
+import Display from "./components/Display";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <Calc></Calc>
-    </>
-  )
-}
+    <div>
+      <Display
+        companyName="AMZ"
+        categoryName="Laptop"
+        top={10}
+        minPrice={1}
+        maxPrice={1000}
+      />
+    </div>
+  );
+};
 
-export default App
+export default App;
